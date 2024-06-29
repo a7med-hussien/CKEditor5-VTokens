@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    {
+      "name": "Vtokens",
+      "className": "Vtokens",
+      "description": "Adds text to the editor.",
+      "path": "src/vtokens.js",
+      "uiComponents": [
+        {
+          "name": "vtokensButton",
+          "type": "Button",
+          "iconPath": "theme/icons/ckeditor.svg"
+        }
+      ]
+    }
+  ]
+}
