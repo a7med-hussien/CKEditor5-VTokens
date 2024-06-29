@@ -66,9 +66,7 @@
       "stylelint --quiet --allow-empty-input"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "publishConfig": {
+    "@a7med-hussien:registry": "https://npm.pkg.github.com"
   }
 }

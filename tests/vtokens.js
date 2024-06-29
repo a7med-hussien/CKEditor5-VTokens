@@ -1,11 +1,11 @@
 import { ClassicEditor, Essentials, Paragraph, Heading } from 'ckeditor5';
-import Vtokens from '../src/vtokens.js';
+import VTokens from '../src/vtokens.js';
 
 /* global document */
 
-describe( 'Vtokens', () => {
+describe( 'VTokens', () => {
 	it( 'should be named', () => {
-		expect( Vtokens.pluginName ).to.equal( 'Vtokens' );
+		expect( VTokens.pluginName ).to.equal( 'VTokens' );
 	} );
 
 	describe( 'init()', () => {
@@ -20,10 +20,10 @@ describe( 'Vtokens', () => {
 					Paragraph,
 					Heading,
 					Essentials,
-					Vtokens
+					VTokens
 				],
 				toolbar: [
-					'vtokensButton'
+					'VTokensButton'
 				]
 			} );
 		} );
@@ -33,18 +33,18 @@ describe( 'Vtokens', () => {
 			return editor.destroy();
 		} );
 
-		it( 'should load Vtokens', () => {
-			const myPlugin = editor.plugins.get( 'Vtokens' );
+		it( 'should load VTokens', () => {
+			const myPlugin = editor.plugins.get( 'VTokens' );
 
-			expect( myPlugin ).to.be.an.instanceof( Vtokens );
+			expect( myPlugin ).to.be.an.instanceof( VTokens );
 		} );
 
 		it( 'should add an icon to the toolbar', () => {
-			expect( editor.ui.componentFactory.has( 'vtokensButton' ) ).to.equal( true );
+			expect( editor.ui.componentFactory.has( 'VTokensButton' ) ).to.equal( true );
 		} );
 
 		it( 'should add a text into the editor after clicking the icon', () => {
-			const icon = editor.ui.componentFactory.create( 'vtokensButton' );
+			const icon = editor.ui.componentFactory.create( 'VTokensButton' );
 
 			expect( editor.getData() ).to.equal( '' );
 

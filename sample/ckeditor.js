@@ -25,7 +25,7 @@ import {
 	TableToolbar
 } from 'ckeditor5';
 
-import Vtokens from '../src/vtokens.js';
+import VTokens from '../src/vtokens.js';
 
 import 'ckeditor5/ckeditor5.css';
 
@@ -34,7 +34,7 @@ import 'ckeditor5/ckeditor5.css';
 ClassicEditor
 	.create( document.querySelector( '#editor' ), {
 		plugins: [
-			Vtokens,
+			VTokens,
 			Essentials,
 			Autoformat,
 			BlockQuote,
@@ -61,7 +61,7 @@ ClassicEditor
 			'undo',
 			'redo',
 			'|',
-			'vtokensButton',
+			'VTokensButton',
 			'|',
 			'heading',
 			'|',
