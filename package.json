@@ -52,7 +52,6 @@
     "lint": "eslint \"**/*.js\" --quiet",
     "start": "ckeditor5-package-tools start",
     "stylelint": "stylelint --quiet --allow-empty-input 'theme/**/*.css'",
-    "test": "ckeditor5-package-tools test",
     "prepare": "npm run build:dist",
     "translations:collect": "ckeditor5-package-tools translations:collect",
     "translations:download": "ckeditor5-package-tools translations:download",
