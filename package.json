@@ -1,5 +1,5 @@
 {
-  "name": "@ahussien/ckeditor5-vtokens",
+  "name": "@a7med-hussien/ckeditor5-vtokens",
   "version": "0.0.1",
   "description": "A plugin for CKEditor 5.",
   "keywords": [
@@ -68,5 +68,6 @@
   },
   "publishConfig": {
     "@a7med-hussien:registry": "https://npm.pkg.github.com"
-  }
+  },
+  "repository": "https://github.com/a7med-hussien/CKEditor5-VTokens.git"
 }
